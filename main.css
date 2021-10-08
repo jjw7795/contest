@@ -60,9 +60,10 @@ header {
 
 #visual img {
   width: inherit;
+  height: inherit;
   background-size: cover;
 }
-.visual {
+/* .visual {
   height: inherit;
   display: flex;
   justify-content: space-between;
@@ -91,14 +92,36 @@ header {
 }
 .visual .visual_text p {
   color: #fff;
-}
+} */
 #contest {
   height: 1200px;
 }
 .contest {
   height: inherit;
   background-color: #fff;
+  padding:50px
 }
+.contest h2 {
+   font-weight: bold;
+   font-size: 30px;
+   border-bottom: 3px solid blue;
+   padding-bottom: 20px;
+}
+.contest .contest_text {
+  padding: 20px;
+}
+.contest .contest_text p {
+ margin-bottom: 10px;
+}
+.c_subject {
+  margin-left: 120px;
+}
+.contest .contest_text  span{
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
 #question {
   height: 900px;
   background-color: black;
