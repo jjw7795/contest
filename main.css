@@ -55,13 +55,25 @@ header {
 #visual {
   width: 100%;
   height: 350px;
-  background-color: pink;
+
+  position: relative;
 }
 
 #visual img {
   width: inherit;
   height: inherit;
-  background-size: cover;
+  background-size: contain;
+}
+.visual {
+  background-image: url("imgs/visual_2-1.png");
+  background-repeat: no-repeat;
+
+  height: inherit;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: 20%;
 }
 /* .visual {
   height: inherit;
@@ -99,24 +111,24 @@ header {
 .contest {
   height: inherit;
   background-color: #fff;
-  padding:50px
+  padding: 50px;
 }
 .contest h2 {
-   font-weight: bold;
-   font-size: 30px;
-   border-bottom: 3px solid blue;
-   padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  border-bottom: 3px solid blue;
+  padding-bottom: 20px;
 }
 .contest .contest_text {
   padding: 20px;
 }
 .contest .contest_text p {
- margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .c_subject {
   margin-left: 120px;
 }
-.contest .contest_text  span{
+.contest .contest_text span {
   font-weight: bold;
   font-size: 18px;
   margin-right: 20px;
