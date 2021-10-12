@@ -1,0 +1,28 @@
+#apply {
+    height: 1200px;
+}
+.apply {
+    
+    background-color: #fff;
+}
+
+.apply h2 {
+    padding: 50px 100px  30px;
+    
+}
+.apply h3 {
+    padding: 0 150px 20px;
+}
+.apply_agree {
+    margin:auto;
+    width:70%;
+    border: 1px solid #000;
+    padding: 30px;
+    
+    
+}
+
+.apply_agree span {
+    color:#111;
+    font-weight: bold;
+}
