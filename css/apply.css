@@ -1,28 +1,93 @@
 #apply {
-    height: 1200px;
+}
+
+.common {
+  margin: auto;
+  width: 80%;
 }
 .apply {
-    
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .apply h2 {
-    padding: 50px 100px  30px;
-    
+  padding: 50px 100px 30px;
 }
 .apply h3 {
-    padding: 0 150px 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 .apply_agree {
-    margin:auto;
-    width:70%;
-    border: 1px solid #000;
-    padding: 30px;
-    
-    
+}
+.apply_agree h3 {
+  padding-bottom: 20px;
+}
+.apply_collect {
+  border: 1px solid #000;
+  padding: 30px;
+}
+.apply_check {
+  text-align: end;
+  margin-top: 20px;
 }
 
 .apply_agree span {
-    color:#111;
-    font-weight: bold;
+  color: #111;
+  font-weight: bold;
+}
+.apply_info {
+}
+.apply_info h3 {
+  padding: 20px 0 20px 0;
+}
+.apply_info table {
+  width: 100%;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #ddd;
+}
+.apply_info table tr {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #eee;
+}
+.apply_info table th {
+  background-color: #eee;
+  font-weight: bold;
+}
+.apply_info table input,
+.apply_info table select,
+.apply_info table button {
+  height: 40px;
+  border: 1px solid #ddd;
+  margin-left: 5px;
+  outline: 0;
+}
+.address th {
+  vertical-align: middle;
+}
+.apply_upload {
+  padding-bottom: 10px;
+}
+.apply_upload h3 {
+  padding: 20px 0 20px 0;
+}
+.apply_upload table {
+  width: 100%;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.apply_upload table tr {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #eee;
+}
+.apply_upload table th {
+  background-color: #eee;
+  font-weight: bold;
+}
+.apply_upload table input {
+  height: 40px;
+  border: 1px solid #ddd;
+  margin-left: 5px;
+  outline: 0;
 }
