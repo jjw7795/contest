@@ -12,7 +12,7 @@
 .apply h2 {
   padding: 50px 100px 30px;
   font-size: 22px;
-  color:rgb(16, 16, 134);
+  color: rgb(16, 16, 134);
   font-weight: bold;
 }
 .apply h3 {
@@ -66,6 +66,14 @@
 }
 .address th {
   vertical-align: middle;
+}
+.address input[type="button"] {
+  cursor: pointer;
+}
+
+#address,
+#detailAddress {
+  width: 60%;
 }
 .apply_upload {
   padding-bottom: 10px;
