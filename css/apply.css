@@ -11,6 +11,9 @@
 
 .apply h2 {
   padding: 50px 100px 30px;
+  font-size: 22px;
+  color:rgb(16, 16, 134);
+  font-weight: bold;
 }
 .apply h3 {
   font-size: 18px;

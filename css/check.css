@@ -1,0 +1,72 @@
+#check {
+}
+
+.common {
+  margin: auto;
+  width: 80%;
+}
+.check {
+  background-color: #fff;
+}
+
+.check h2 {
+  padding: 50px 100px 30px;
+  font-size: 22px;
+  color:rgb(16, 16, 134);
+  font-weight: bold;
+}
+.check h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+.check_info table {
+  width: 100%;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #ddd;
+}
+.check_info table tr {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #eee;
+}
+.check_info table th {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+
+.check_info table input,
+.check_info table button {
+  height: 40px;
+  width: 90%;
+  border: 1px solid #ddd;
+  
+  outline: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.check_info th {
+  vertical-align: middle;
+}
+.check_button {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #888;
+}
+
+.check_button button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #999;
+    color: #fff;
+}
+
+.check_info p {
+    padding: 20px;
+}
