@@ -1,0 +1,60 @@
+@charset 'UTF-8';
+/*main-color:30baa1
+sub-color:d4f0eb  */
+
+/********** 기본custom **********/
+body {color:#262626;}
+.hide {position:absolute; overflow:hidden; width:1px; height:1px; margin: -1px; clip: rect(0,0,0,0); font-size:1px;}
+caption {position:static; overflow:hidden; width:1px; height:1px; margin:0; padding:0; font-size:1px; text-indent:-9999px;}
+.clearfix:after {content:""; display:block; width:0; height:0; font-size:0; clear:both;}
+
+/* input, textarea 기본스타일 */
+input {width:100%; height:36px; padding:0 10px; border:1px solid #bbb;}
+input:focus, input:active, input:hover {border-width:1px; outline:#262626;}
+
+textarea {width:100%; padding:10px; color:#262626; border:1px solid #bbb;}
+textarea:focus, textarea:active, textarea:hover {border-width:1px; outline:#262626;}
+
+/* tit */
+.con-tit {margin-bottom:14px; font-size:22px; font-weight:bold; color:#30baa1;}
+
+/********** 운동등록 **********/
+/* admin-from-table */
+.admin-from-table {width:100%; border-top:3px solid #30baa1; border-spacing:0; border-collapse: collapse;}
+.admin-from-table tr td, .admin-from-table tr th{ padding:16px 20px; border:1px solid #bbb; border-left-width: 0; border-right-width: 0;}
+.admin-from-table tbody tr th {border-right-width:1px; background-color:#f4fbfa; font-weight:normal;}
+
+.admin-from-table input[type="radio"]:not([class^=cke]), .admin-from-table input[type="checkbox"]:not([class^=cke]) {clip: rect(0 0 0 0); width: 1px; height: 1px; position: absolute; overflow: hidden; margin: -1px; padding: 0; border: 0;}
+.admin-from-table .radio-list-box {display:flex;}
+.admin-from-table .radio-list-box li {margin-right:20px;}
+.admin-from-table .radio-list-box input[type="radio"]+label{cursor: pointer;}
+.admin-from-table .radio-list-box .radio {position:relative; display:inline-block; width: 20px; height: 20px; border-radius:50%; margin: -4px 0 0 0; border:1px solid #bbb; vertical-align: middle;}
+.admin-from-table input[type="radio"]:checked+label .radio{border-color:#30baa1; }
+.admin-from-table input[type="radio"]:checked+label .radio:before {content:""; position:absolute; top:50%; left:50%; width:8px; height:8px; border-radius:50%; background:#30baa1; transform:translate(-50%, -50%); }
+.admin-from-table .ex-con {display:none;}
+.admin-from-table .ex-con.current {display:block;}
+
+.admin-from-table .check-list-box {display:flex;}
+.admin-from-table .check-list-box li {margin-right:20px;}
+.admin-from-table .check-list-box input[type="checkbox"]+label{cursor:pointer;}
+.admin-from-table .check-list-box .check{position:relative; display:inline-block; width: 15px; height:15px; margin: -4px 0 0 0; border:1px solid #bbb; vertical-align: middle;}
+.admin-from-table .check-list-box input[type="checkbox"]:checked+label .check{border-color:#30baa1; background:#30baa1; }
+
+.admin-from-table .attach-box { margin-bottom:8px;} 
+.admin-from-table .attach-input {clip: rect(0 0 0 0); width: 1px; height: 1px; position: absolute; overflow: hidden; margin: -1px; padding: 0; border: 0;}
+.admin-from-table .attach-box-inner {display:flex;}
+.admin-from-table .attach-btn {flex-grow:1; flex-basis:100px; line-height:34px; background:#f4f4f4; color:#505050; border:1px solid #bbb;}
+.admin-from-table .attach-btn:hover {background-color:#dedede;}       
+.admin-from-table .attach-read {flex-grow:1; padding:0 10px; border-right:none; border-left:none;}
+.admin-from-table .attach-cancel-btn {flex-grow:1; flex-basis:34px; height:36px; border:1px solid #bbb;}
+.admin-from-table .attach-cancel-btn > i {font-size:22px; color:#ff7171;}
+
+.admin-from-table .file-form-add {display:inline-block; border:1px solid #bbb; padding:3px 7px 3px 4px; cursor:pointer; background-color:#f4f4f4; color: #505050;}
+.admin-from-table .file-form-add:hover {background-color:#dedede;}
+/* .rdbox:focus + label .radio{outline: 1px dotted red; outline: -webkit-focus-ring-color auto 5px;} */
+
+/* btn-box */
+.btn-box {padding:30px 10px; text-align:right;} 
+.btn-box .btn {display:inline-block; width:90px; line-height:46px; background:#30baa1; color:#fff; text-align:center; font-weight:bold;}
+.btn-box .btn.cancel {background:#dedede; color:#505050;}
+/********** 운동등록 끝 **********/

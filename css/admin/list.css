@@ -1,0 +1,162 @@
+
+
+.main h1{
+    font-size: 30px;
+    --border-bottom: 10px solid #30baa1;
+    display: inline-block;
+    margin: 20px 0;
+    color:#30baa1;
+    font-weight: bold;
+}
+table{
+    width:100%;
+    border-top: 2px solid #30baa1;
+    border-collapse: collapse;
+    
+    
+}
+
+
+table td,
+table th
+{
+    border:1px solid #bbb; 
+    text-align:center; 
+ 
+}
+table td:first-child,
+table th:first-child
+{
+    background: #f4fbfa;
+ 
+}
+
+
+table thead tr{
+    height: 70px;
+}
+
+table tr td> input{
+    margin: 2px;
+    width:100px;   
+}
+
+table tr td:nth-child(4){
+    text-align: left;
+    text-indent: 10px;
+}
+
+
+table .del-all{
+    
+}
+table .del-all>td{
+    text-align: left;  
+    background: #30baa1; 
+    position: sticky; 
+    
+ }
+
+
+table  .del-all input{
+  cursor: pointer;
+}
+
+
+.write-box{
+   padding:30px 10px;
+   text-align: right;
+}
+
+.write-box a{
+    display:inline-block;
+    
+    width:90px;
+    height: 45px;
+    line-height: 45px;
+    text-align:center;
+    color:#fff;
+    background: #30baa1;
+    font-size:20px;
+    font-weight: bold; 
+    
+    transition: color 2s, background-color 2s, border-radius 2s;
+    
+}
+.write-box a:hover{
+    color:#30baa1;
+    border-radius: 8px;
+    background:#fff;
+    border-bottom:3px solid #30baa1;
+    --transform: rotate(360deg);
+}
+.number-list{
+    text-align: center;
+}
+
+.number-list li{
+  display: inline-block;
+    
+}
+.number-list .number{
+    font-size:20px;
+    font-weight: bold;
+    color:#30baa1;
+    border: 1px solid #30baa1;
+    padding:5px;
+    
+}
+
+
+
+.number-list .number2{
+    border: 1px solid #fff;
+    color: #fff;
+    background:#30baa1;
+}
+
+.number-list .prev,
+.number-list .next{
+    cursor: pointer;
+}
+
+.search-form{
+   margin:0 0 20px 0;
+   text-align: right;
+  
+
+   
+}
+.search-form input{
+    padding:5px 10px;
+    outline: none;
+    height:40px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+.search-form .option{
+    width:100px;
+    height:40px;
+    outline: none;
+    vertical-align: middle;
+    text-indent: 10px;
+    font-size:16px;
+    
+}
+.search-form input[type="text"]{
+    width:300px;
+}
+.search-form input[type="submit"]{
+    background: #30baa1;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.notice-list > tbody input[type="button"]{
+    cursor: pointer;
+}
+
+

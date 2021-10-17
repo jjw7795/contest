@@ -1,0 +1,116 @@
+@import url("../css/reset.css");
+
+
+
+.main h1{
+    font-size: 30px;
+    --border-bottom: 10px solid #30baa1;
+    display: inline-block;
+    margin: 20px 0;
+    color:#30baa1;
+    font-weight: bold;
+}
+table{
+    width:100%;
+    border-top: 2px solid #30baa1;
+    border-collapse: collapse;
+    
+    
+}
+
+table td:first-child
+{
+    background: #f4fbfa; 
+ 
+}
+
+
+table td
+{
+    border:1px solid #bbb; 
+    text-align:center; 
+ 
+}
+
+
+table  tr{
+    height: 40px;
+}
+
+
+
+table tr td:nth-child(2){
+    text-align: left;
+    text-indent: 20px;
+}
+table tr td:nth-child(3){
+    background: #f4fbfa; 
+}
+
+
+ textarea{
+border:none;
+
+padding:20px;
+height: 350px;
+width:100%;
+outline:none;
+text-align: left;
+
+}       
+
+
+.list-box{
+    padding:30px 10px;
+    text-align: right;
+ }
+ 
+ .list-box .btn-button{
+     display:inline-block;   
+     width:90px;
+     height: 45px;
+     line-height: 45px;
+     text-align:center;
+     color:#fff;
+     background: #30baa1;
+     font-size:20px;
+     font-weight: bold;  
+     transition: color 2s, background-color 2s, border-radius 2s;
+     border:none;
+     outline: none;
+ }
+ .list-box a:hover,
+ .list-box .btn-button:hover
+ {
+     color:#30baa1;
+     border-radius: 8px;
+     background:#fff;
+     border-bottom:3px solid #30baa1;
+     --transform: rotate(360deg);
+ }
+
+ .next-list >table{
+     border-top: none;
+ }
+
+
+ .title{
+    border:0;
+    outline:none;
+    width:80%;
+    height:100%;
+    font-size:16px;
+}
+.next-list .move-icon{
+    text-align: center;
+}
+.next-list .move-icon a{
+    display:inline-block;
+   transform: translateX(-100%);
+}
+
+.contents{
+	text-align:left;
+	padding:20px;
+	min-height:300px;
+}
