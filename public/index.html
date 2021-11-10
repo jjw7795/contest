@@ -14,29 +14,31 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link rel="stylesheet" href="main.css" />
+    <script defer src="main.js"></script>
   </head>
   <body>
     <header>
       <div class="inner header">
         <h1><img src="imgs/logo_1.png" alt="" /></h1>
         <ul class="gnb">
-          <li>
-            <a href=""><img src="imgs/menu1.png" alt="공모전 소개" /></a>
+          <li class="navbar__menu__item active" data-link="#info">
+            <a href="index.html" class="active">공모전 소개</a>
           </li>
-          <li>
-            <a href=""><img src="imgs/menu2.png" alt="공모전 요강" /></a>
+         
+          <li class="navbar__menu__item " data-link="#apply">
+            <a href="subPage/apply.html">작품접수</a>
           </li>
-          <li>
-            <a href="subPage/apply.html"><img src="imgs/menu3.png" alt="작품 접수" /></a>
+          <li class="navbar__menu__item " data-link="#check">
+            <a href="subPage/check.html">접수확인</a>
           </li>
-          <li>
-            <a href="subPage/check.html"><img src="imgs/menu4.png" alt="접수 확인" /></a>
+          <li class="navbar__menu__item " data-link="#notice">
+            <a href="subPage/notice.html">공지사항</a>
           </li>
-          <li>
-            <a href=""><img src="imgs/menu5.png" alt="공지사항" /></a>
+          <li class="navbar__menu__item " data-link="#question">
+            <a href="subPage/question.html">Q&A</a>
           </li>
-          <li>
-            <a href=""><img src="imgs/menu6.png" alt="QnA" /></a>
+           <li class="navbar__menu__item " data-link="#summary">
+            <a href="">기부</a>
           </li>
         </ul>
       </div>
@@ -49,7 +51,7 @@
     </section>
     <section id="contest">
       <div class="inner contest">
-        <h2>공모전 소개</h2>
+       
 
         <div class="contest_text">
           <p> <span> · 행 사 명</span>    제5회 전국 고등학생『헌혈 체험 공모전</p>

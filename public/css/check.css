@@ -10,17 +10,16 @@
 }
 
 .check h2 {
-  padding: 50px 100px 30px;
-  font-size: 22px;
-  color:rgb(16, 16, 134);
+  padding: 70px 0 50px 0;
+  text-align: center;
+  color: #fdc000;
   font-weight: bold;
+  font-size: 70px;
 }
 .check h3 {
   font-size: 18px;
   font-weight: bold;
 }
-
-
 
 .check_info table {
   width: 100%;
@@ -37,13 +36,12 @@
   font-weight: bold;
 }
 
-
 .check_info table input,
 .check_info table button {
   height: 40px;
   width: 90%;
   border: 1px solid #ddd;
-  
+
   outline: 0;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -52,21 +50,21 @@
   vertical-align: middle;
 }
 .check_button {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    border-bottom: 1px solid #888;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #888;
 }
 
 .check_button button {
-    width: 200px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    background-color: #999;
-    color: #fff;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #999;
+  color: #fff;
 }
 
 .check_info p {
-    padding: 20px;
+  padding: 20px;
 }

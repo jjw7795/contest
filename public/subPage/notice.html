@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="../css/notice.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <script src="../main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner header">
+        <h1><img src="../imgs/logo_1.png" alt="로고" /></h1>
+        <ul class="gnb">
+          <li class="navbar__menu__item active" data-link="#info">
+            <a href="../index.html">공모전 소개</a>
+          </li>
+
+          <li class="navbar__menu__item active" data-link="#info">
+            <a href="apply.html">작품접수</a>
+          </li>
+          <li class="navbar__menu__item active" data-link="#info">
+            <a href="check.html">접수확인</a>
+          </li>
+          <li class="navbar__menu__item active" data-link="#info">
+            <a href="notice.html" class="active">공지사항</a>
+          </li>
+          <li class="navbar__menu__item active" data-link="#info">
+            <a href="question.html">Q&A</a>
+          </li>
+          <li class="navbar__menu__item" data-link="#summary">
+            <a href="">기부</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="notice">
+      <div style="width: 1200px">
+        <h1>공지사항</h1>
+
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="검색어를 입력해주세요"
+            class="form-control"
+            @keyup.enter="apply"
+          />
+          <button class="btn" @click="apply">
+            <span class="material-icons"> search </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="count-box"></div>
+
+      <div class="table-box">
+        <table>
+          <colgroup>
+            <col style="width: 100px" />
+            <col style="width: 600px" />
+            <col style="width: 200px" />
+            <col style="width: 100px" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성일</th>
+              <th>조회</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>ㅎㅎ</td>
+              <td>2021</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="page-box">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link">1</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <div class="inner">footer</div>
+    </footer> -->
+  </body>
+</html>

@@ -10,10 +10,11 @@
 }
 
 .apply h2 {
-  padding: 50px 100px 30px;
-  font-size: 22px;
-  color: rgb(16, 16, 134);
+  padding: 70px 0 50px 0;
+  text-align: center;
+  color: #fdc000;
   font-weight: bold;
+  font-size: 70px;
 }
 .apply h3 {
   font-size: 18px;
@@ -101,4 +102,21 @@
   border: 1px solid #ddd;
   margin-left: 5px;
   outline: 0;
+}
+
+.register-box {
+  width: 100%;
+  padding: 30px;
+}
+.register {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+
+  background-color: #fdc000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
