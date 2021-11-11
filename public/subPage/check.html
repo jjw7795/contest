@@ -13,8 +13,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+     <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../css/check.css" />
     <link rel="stylesheet" href="../main.css" />
+   
   </head>
   <body>
     <header>
@@ -55,25 +61,22 @@
           
           <table >
             <tr>
-              <th> &#183 이름</th>
-              <td><input type="text"></td>
+              <th> &#183 이메일</th>
+              <td><input id="email" type="text"></td>
             </tr>
-            <tr>
-               <th>&#183 휴대폰</th>
-              <td><input type="text"></td>
-            </tr>
+           
             <tr>
                <th>&#183 비밀번호</th>
               <td>
                 
-                <input type="text"></td>
+                <input id="pw" type="text"></td>
             </tr>
            
           </table>
 
           <div class="check_button">
-            <button>확인</button>
-            <button>취소</button>
+            <button type="submit" class="check-btn">확인하기</button>
+           
           </div>
 
           <p> * 공모전 기간종료시에는 확인만 가능하며 수정할 수 없습니다 </p>
@@ -82,10 +85,20 @@
 
     
       </div>
+
+      
     </section>
+
+  
 
     <!-- <footer>
       <div class="inner">footer</div>
     </footer> -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+  
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+  <script src="../js/check.js"></script>
   </body>
 </html>

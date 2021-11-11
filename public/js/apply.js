@@ -44,16 +44,16 @@ $("#agree").click(function () {
           };
           db.collection("user").doc(result.user.uid).set(유저정보);
 
-          console.log("dfjkdfkdf");
+          console.log("유저");
           console.log(result);
           console.log(result.user);
           result.user.updateProfile({ displayName: name });
         });
 
-      var file = document.querySelector("#file").files[0];
-      var storageRef = storage.ref();
-      var 저장할경로 = storageRef.child("file/" + file.name);
-      var 업로드작업 = 저장할경로.put(file);
+      let file = document.querySelector("#file").files[0];
+      let storageRef = storage.ref();
+      let 저장할경로 = storageRef.child("file/" + file.name);
+      let 업로드작업 = 저장할경로.put(file);
 
       업로드작업.on(
         "state_changed",
