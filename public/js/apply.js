@@ -29,6 +29,9 @@ $("#agree").click(function () {
       let address = $("#address").val();
       let detailAddress = $("#detailAddress").val();
       let phone = $("#phone").val();
+      let fileValue = $("#file").val().split("\\");
+      let fileName = fileValue[fileValue.length - 1];
+      console.log("ddd", fileName);
 
       firebase
         .auth()
@@ -68,8 +71,9 @@ $("#agree").click(function () {
             var 저장할거 = {
               email,
               name,
-              date: new Date(),
+              date: new Date().toLocaleString(),
               file: url,
+              fileName,
               //   uid: JSON.parse(localStorage.getItem("user")).uid,
               //   name: JSON.parse(localStorage.getItem("user")).displayName,
             };
@@ -78,7 +82,7 @@ $("#agree").click(function () {
               .then((result) => {
                 console.log(result);
                 console.log("dfjdkfjkd");
-                // window.location.href = "/index.html";
+                window.location.href = "/public/index.html";
               })
               .catch((err) => {
                 console.log(err);

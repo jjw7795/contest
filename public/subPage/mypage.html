@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+     <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/check.css" />
+    <link rel="stylesheet" href="../main.css" />
+   
+  </head>
+  <body>
+    <header>
+      <div class="inner header">
+        <h1><img src="../imgs/logo_1.png" alt="로고" /></h1>
+        <ul class="gnb">
+          <li  class="navbar__menu__item active" data-link="#info"> 
+            <a href="../index.html" >공모전 소개</a>
+          </li>
+          
+          <li  class="navbar__menu__item active" data-link="#info">
+            <a href="apply.html">작품접수</a>
+          </li>
+          <li  class="navbar__menu__item active" data-link="#info">
+            <a href="check.html"  class="active">접수확인</a>
+          </li>
+          <li  class="navbar__menu__item active" data-link="#info">
+            <a href="notice.html">공지사항</a>
+          </li>
+          <li  class="navbar__menu__item active" data-link="#info">
+            <a href="question.html">Q&A</a>
+          </li>
+            <li class="navbar__menu__item " data-link="#summary">
+            <a href="">기부</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="check">
+      <div class="inner check">
+        <h2>Mypage</h2>
+        
+    
+
+        <div class="check_info common">
+     
+          
+          <table >
+             <tr>
+              <th> &#183 이름</th>
+              <td><input id="name" type="text"></td>
+            </tr>
+            <tr>
+              <th> &#183 이메일</th>
+              <td><input id="email" type="text"></td>
+            </tr>
+           
+              <tr>
+               <th>&#183 등록일</th>
+              <td>
+                
+                <input  value="" type="text" id="date">
+                
+              </td>
+            </tr>
+            <tr>
+              <th> &#183작품</th>
+              <td><input type="text" value="" id="file"></td>
+            </tr>
+          </table>
+
+          <div class="check_button">
+            <button type="submit" class="check-btn">수정하기</button>
+           
+          </div>
+
+          <!-- <p> * 공모전 기간종료시에는 확인만 가능하며 수정할 수 없습니다 </p> -->
+        
+        </div>
+
+    
+      </div>
+
+      
+    </section>
+
+  
+
+    <!-- <footer>
+      <div class="inner">footer</div>
+    </footer> -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+  
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+  <script src="../js/mypage.js"></script>
+  </body>
+</html>
