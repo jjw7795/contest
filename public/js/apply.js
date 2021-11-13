@@ -74,14 +74,16 @@ $("#agree").click(function () {
               date: new Date().toLocaleString(),
               file: url,
               fileName,
+              birth,
+              address,
+              detailAddress,
+              phone,
               //   uid: JSON.parse(localStorage.getItem("user")).uid,
               //   name: JSON.parse(localStorage.getItem("user")).displayName,
             };
             db.collection("apply")
               .add(저장할거)
               .then((result) => {
-                console.log(result);
-                console.log("dfjdkfjkd");
                 window.location.href = "/public/index.html";
               })
               .catch((err) => {

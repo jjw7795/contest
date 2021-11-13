@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>마이루틴</title>
-    <link rel="stylesheet" href="../css/admin/reset.css" />
-    <link rel="stylesheet" href="../css/admin/common.css" />
+    <link rel="stylesheet" href="../../css/admin/reset.css" />
+    <link rel="stylesheet" href="../../css/admin/common.css" />
     <!-- <link rel="stylesheet" href="../../css/xeicon.min.css"> -->
-
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="../css/admin/detail.css" />
-    <script src="../../js/admin/notice/notice.js"></script>
+    <link rel="stylesheet" href="../../css/admin/detail.css" />
   </head>
 
   <body>
@@ -65,9 +68,7 @@
           <h1>접수정보</h1>
           <table class="notice-list">
             <colgroup>
-              <col style="width: 550px" />
-              <col style="width: 550px" />
-              <col style="width: 550px" />
+              <col style="width: 300px" />
               <col style="width: auto" />
             </colgroup>
 
@@ -75,40 +76,44 @@
             <tbody>
               <tr>
                 <td>이름</td>
-                <td></td>
+                <td class="name"></td>
+              </tr>
+              <tr>
                 <td>생년월일</td>
-                <td></td>
+                <td class="birth"></td>
               </tr>
 
               <tr>
-                <td>생년월일</td>
-                <td></td>
+                <td>이메일</td>
+                <td class="email"></td>
+              </tr>
+              <tr>
                 <td>휴대폰</td>
-                <td></td>
+                <td class="phone"></td>
               </tr>
               <tr>
                 <td>주소</td>
-                <td></td>
-                <td>이메일</td>
-                <td></td>
+                <td class="address">
+                  <span class="detailAddress"></span>
+                </td>
               </tr>
               <tr>
-                <td>첨부파일</td>
-                <td></td>
                 <td>작성일</td>
-                <td></td>
+                <td class="date"></td>
+              </tr>
+              <tr>
+                <td>파일명</td>
+                <td class="">
+                  <a href="" target="_blank" class="fileName"></a>
+                </td>
               </tr>
             </tbody>
           </table>
 
-          <section class="detail_text">
-            <textarea name="" id="" cols="30" rows="10"> </textarea>
-          </section>
-
           <section class="list-box">
-            <a class="btn-button" href="notice.html">목록</a>
-            <a class="btn-button" href="edit.jsp">수정</a>
-            <a class="btn-button del-button" href="">삭제</a>
+            <a class="btn-button" href="/public/admin/apply/list.html">목록</a>
+            <!-- <a class="btn-button" href="edit.jsp">수정</a>
+            <a class="btn-button del-button" href="">삭제</a> -->
           </section>
 
           <section class="next-list">
@@ -119,7 +124,7 @@
                 <col style="width: 200px" />
               </colgroup>
 
-              <tr>
+              <!-- <tr>
                 <td class="move-icon">
                   <a href=""><i class="xi-angle-up-min"></i></a> 이전글
                 </td>
@@ -132,7 +137,7 @@
                 </td>
                 <td></td>
                 <td></td>
-              </tr>
+              </tr> -->
             </table>
           </section>
         </main>
@@ -145,5 +150,10 @@
       </footer> -->
       <!-- //footer -->
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="../../js/admin/apply/detail.js"></script>
   </body>
 </html>

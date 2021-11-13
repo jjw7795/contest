@@ -1,0 +1,37 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyC_Fgl3NBChCxP6zVQB6hdNHk2pIGyK1y0",
+  authDomain: "contest-fba51.firebaseapp.com",
+  projectId: "contest-fba51",
+  storageBucket: "contest-fba51.appspot.com",
+  messagingSenderId: "946889850549",
+  appId: "1:946889850549:web:ddb1cf8f9e62ccc73cc8fc",
+  measurementId: "G-YDFGEM94YS",
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
+const storage = firebase.storage();
+
+var 쿼리스트링 = new URLSearchParams(window.location.search);
+
+db.collection("apply")
+  .doc(쿼리스트링.get("id"))
+  .get()
+  .then((result) => {
+    console.log(result.data());
+    $(".name").html(result.data().name);
+    $(".birth").html(result.data().birth);
+    $(".email").html(result.data().email);
+    $(".phone").html(result.data().phone);
+    $(".address").html(result.data().address);
+    $(".detailAddress").html(result.data().detailAddress);
+    $(".date").html(result.data().date);
+    $(".fileName").html(result.data().fileName);
+    $(".fileName").attr("href", result.data().file);
+  });
+
+$("#edit").click(function () {
+  window.location.href = "/edit.html?id=" + 쿼리스트링.get("id");
+});
