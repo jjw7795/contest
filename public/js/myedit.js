@@ -17,23 +17,25 @@ const storage = firebase.storage();
 var 쿼리스트링 = new URLSearchParams(window.location.search);
 쿼리스트링.get("id");
 
-let fileValue = $("#file").val().split("\\");
-let fileName = fileValue[fileValue.length - 1];
-console.log("ddd", fileName);
-
 db.collection("apply")
   .doc(쿼리스트링.get("id"))
   .get()
   .then((result) => {
     console.log(result.data());
+
     $("#fileName").val(result.data().fileName);
   });
 
 $("#send").click(function () {
+  var 쿼리스트링 = new URLSearchParams(window.location.search);
   let file = document.querySelector("#file").files[0];
   let storageRef = storage.ref();
   let 저장할경로 = storageRef.child("file/" + file.name);
   let 업로드작업 = 저장할경로.put(file);
+
+  let fileValue = $("#file").val().split("\\");
+  let fileName = fileValue[fileValue.length - 1];
+  console.log("ddd", fileName);
 
   업로드작업.on(
     "state_changed",
@@ -55,7 +57,8 @@ $("#send").click(function () {
           .doc(쿼리스트링.get("id"))
           .update(바꿀거)
           .then((result) => {
-            window.location.href = "/public/index.html";
+            window.location.href =
+              "/public/subPage/mypage.html?id=" + 쿼리스트링.get("id");
           })
           .catch((err) => {
             console.log(err);
