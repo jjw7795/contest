@@ -24,7 +24,7 @@ db.collection("apply")
       let 템플릿 = `<tr>
               
                 <td>${n++}</td>
-                <td><a href="/public/admin/apply/detail.html?id=${doc.id}">${
+                <td><a href="/admin/apply/detail.html?id=${doc.id}">${
         doc.data().name
       }</a></td>
             
