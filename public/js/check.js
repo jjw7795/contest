@@ -41,7 +41,7 @@ $(".check-btn").click(function () {
               console.log(doc.data());
               console.log(doc.id);
 
-              window.location.href = `/public/subPage/mypage.html?id=${doc.id}`;
+              window.location.href = `/subPage/mypage.html?id=${doc.id}`;
 
               //           let template = ` <table >
               //         <tr>

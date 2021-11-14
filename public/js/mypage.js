@@ -27,6 +27,5 @@ db.collection("apply")
   });
 
 $(".check-btn").click(function () {
-  window.location.href =
-    "/public/subPage/myedit.html?id=" + 쿼리스트링.get("id");
+  window.location.href = "/subPage/myedit.html?id=" + 쿼리스트링.get("id");
 });

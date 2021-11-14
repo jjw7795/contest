@@ -84,7 +84,7 @@ $("#agree").click(function () {
             db.collection("apply")
               .add(저장할거)
               .then((result) => {
-                window.location.href = "/public/index.html";
+                window.location.href = "/";
               })
               .catch((err) => {
                 console.log(err);

@@ -58,7 +58,7 @@ $("#send").click(function () {
           .update(바꿀거)
           .then((result) => {
             window.location.href =
-              "/public/subPage/mypage.html?id=" + 쿼리스트링.get("id");
+              "/subPage/mypage.html?id=" + 쿼리스트링.get("id");
           })
           .catch((err) => {
             console.log(err);
