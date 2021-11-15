@@ -53,7 +53,7 @@ table .del-all input {
 
 .write-box {
   padding: 30px 10px;
-  text-align: right;
+  text-align: left;
 }
 
 .write-box a {

@@ -11,8 +11,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="/../css/admin/list.css" />
-
+    <link rel="stylesheet" href="../../css/admin/list.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
     <script src="../../js/admin/notice/notice.js"></script>
     <script src="../../js/admin_common.js"></script>
   </head>
@@ -67,7 +71,7 @@
         <main id="notice" class="main">
           <h1>공지사항 목록</h1>
 
-          <section class="search-form">
+          <!-- <section class="search-form">
             <h1 style="display: none">강좌검색 폼</h1>
             <form action="">
               <fieldset>
@@ -77,103 +81,51 @@
                 </select>
 
                 <input type="text" name="q" value="" />
-                <input type="submit" value="검색" />
+                <input type="submit" value="검색" /> -->
 
-                <!-- <datalist id="name">
+          <!-- <datalist id="name">
 
                 <option value="번호"></option>
                 <option value="작성자"></option>
                 <option value="제목"></option>
                 
             </datalist> -->
-              </fieldset>
+          <!-- </fieldset>
             </form>
-          </section>
+          </section> -->
 
           <table class="notice-list">
             <colgroup>
-              <col style="width: 50px" />
               <col style="width: 100px" />
+              <col style="width: 350px" />
               <col style="width: 200px" />
-              <col style="width: auto" />
-              <col style="width: 100px" />
-              <col style="width: 200px" />
-              <col style="width: 200px" />
-              <col style="width: 120px" />
             </colgroup>
 
             <thead>
               <tr>
-                <th><input class="overall-checkbox" type="checkbox" /></th>
+                <!-- <th><input class="overall-checkbox" type="checkbox" /></th> -->
                 <th>번호</th>
-                <th>작성자</th>
-                <th>글 제목</th>
-                <th>조회수</th>
-                <th>이메일</th>
+                <!-- <th>작성자</th> -->
+                <th>제목</th>
                 <th>작성일</th>
-                <th>게시물관리</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td><input type="checkbox" /></td>
+            <tbody class="tbody">
+              <!-- <tr> -->
+              <!-- <td><input type="checkbox" /></td> -->
+              <!-- <td></td>
                 <td></td>
                 <td></td>
-                <td>.</td>
-                <td></td>
-                <td></td>
+                <td></td> -->
 
-                <td></td>
-                <td>
+              <!-- <td>
                   <a class="link-button" href="detail.html"></a>
                   <input class="trigger-button" type="button" value="글수정" />
                   <input type="button" class="del-button" value="글삭제" />
-                </td>
-              </tr>
+                </td> -->
+              <!-- </tr> -->
 
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <a class="link-button" href="detail.html"></a>
-                  <input class="trigger-button" type="button" value="글수정" />
-
-                  <input type="button" class="del-button" value="글삭제" />
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <input type="button" value="글수정" />
-                  <input type="button" class="del-button" value="글삭제" />
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <input type="button" value="글수정" />
-                  <input type="button" class="del-button" value="글삭제" />
-                </td>
-              </tr>
-
-              <tr class="del-all">
+              <!-- <tr class="del-all">
                 <td colspan="8">
                   <input
                     type="submit"
@@ -181,20 +133,21 @@
                     value="일괄삭제"
                   />
                 </td>
-              </tr>
+              </tr> -->
+              <!-- </tr> -->
             </tbody>
           </table>
 
           <div class="write-box">
             <a href="../notice/reg.html">글쓰기</a>
           </div>
-
+          <!-- 
           <div class="number-list">
-            <ul>
-              <!-- <span class="number" onclick="alert('이전 없습니다')">
+            <ul> -->
+          <!-- <span class="number" onclick="alert('이전 없습니다')">
                 <i class="xi-long-arrow-left"></i
               ></span> -->
-              <span class="number prev"> <i class="xi-angle-left"></i></span>
+          <!-- <span class="number prev"> <i class="xi-angle-left"></i></span>
 
               <li><a href="" class="number number2">1</a></li>
               <li><a href="" class="number">2</a></li>
@@ -204,7 +157,7 @@
 
               <span class="next"> <i class="xi-angle-right"></i></span>
             </ul>
-          </div>
+          </div> -->
         </main>
         <!-- //main(개별 컨턴츠 넣는곳) -->
       </div>
@@ -215,5 +168,10 @@
       </footer> -->
       <!-- //footer -->
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="../../js/admin/notice/list.js"></script>
   </body>
 </html>

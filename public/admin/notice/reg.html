@@ -6,10 +6,13 @@
     <title>마이루틴</title>
     <link rel="stylesheet" href="../../css/admin/reset.css" />
     <link rel="stylesheet" href="../../css/admin/common.css" />
-    <link rel="stylesheet" href="../../../css/xeicon.min.css" />
-    <link rel="stylesheet" href="../../css/admin/reg.css" />
 
-    <script src="../../js/admin_common.js"></script>
+    <link rel="stylesheet" href="../../css/admin/reg.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -77,22 +80,19 @@
                     <td>
                       <input
                         type="text"
-                        autofocus
                         placeholder="20자 이내로 작성하시오"
-                        list="name"
-                        required
+                        class="title"
+                        value=""
                       />
                     </td>
 
-                    <datalist id="name">
+                    <!-- <datalist id="name">
                       <option value="공지사항"></option>
                       <option value="이벤트"></option>
-                      <option value="갤러리 자료실"></option>
-                      <option value="공지사항2"></option>
-                    </datalist>
+                    </datalist> -->
                   </tr>
 
-                  <tr>
+                  <!-- <tr>
                     <th>공개여부</th>
                     <td class="radio-list-box">
                       <input
@@ -116,7 +116,7 @@
                         <span class="radio"></span> 비공개
                       </label>
                     </td>
-                  </tr>
+                  </tr> -->
                   <tr class="write">
                     <th class="list">내용</th>
                     <td>
@@ -162,9 +162,9 @@
                           </div>
                         </div>
                       </div>
-                      <div class="file-form-add">
+                      <!-- <div class="file-form-add">
                         <i class="xi-plus-min"></i>추가
-                      </div>
+                      </div> -->
                     </td>
 
                     <!-- <td> <input class="subtext" type="text">
@@ -174,7 +174,7 @@
               </fieldset>
 
               <div class="btn-box">
-                <button class="btn">등록</button>
+                <button class="btn regi">등록</button>
                 <button class="btn cancel">닫기</button>
               </div>
             </form>
@@ -213,11 +213,15 @@
       </div>
 
       <!-- footer -->
-      <footer class="footer">
+      <!-- <footer class="footer">
         <span>ⓒ 마이 루틴</span>
-      </footer>
+      </footer> -->
       <!-- //footer -->
-      <script src="../../js/admin.js"></script>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="../../js/admin/notice/reg.js"></script>
   </body>
 </html>

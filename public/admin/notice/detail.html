@@ -12,6 +12,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../../css/admin/detail.css" />
     <script src="../../js/admin/notice/notice.js"></script>
   </head>
@@ -62,53 +72,49 @@
 
         <!-- main(개별 컨턴츠 넣는곳) -->
         <main id="notice" class="main">
-          <h1>공지사항</h1>
+          <h1>자세한 내용</h1>
           <table class="notice-list">
-            <colgroup>
-              <col style="width: 550px" />
-              <col style="width: 550px" />
-              <col style="width: 550px" />
-              <col style="width: auto" />
-            </colgroup>
+            <colgroup></colgroup>
 
             <thead></thead>
             <tbody>
               <tr>
-                <td>이름</td>
-                <td></td>
-                <td>생년월일</td>
-                <td></td>
+                <td>제목</td>
+                <td class="title"></td>
               </tr>
 
-              <tr>
-                <td>생년월일</td>
-                <td></td>
-                <td>휴대폰</td>
-                <td></td>
+              <tr class="write">
+                <th>내용</th>
+                <td>
+                  <textarea
+                    class="content-text"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                  >
+                  </textarea>
+                </td>
               </tr>
               <tr>
-                <td>주소</td>
-                <td></td>
-                <td>이메일</td>
-                <td></td>
+                <td>파일</td>
+                <td class="fileName"></td>
               </tr>
               <tr>
-                <td>첨부파일</td>
-                <td></td>
                 <td>작성일</td>
-                <td></td>
+                <td class="date"></td>
               </tr>
             </tbody>
           </table>
 
-          <section class="detail_text">
+          <!-- <section class="detail_text">
             <textarea name="" id="" cols="30" rows="10"> </textarea>
-          </section>
+          </section> -->
 
           <section class="list-box">
-            <a class="btn-button" href="notice.html">목록</a>
-            <a class="btn-button" href="edit.jsp">수정</a>
-            <a class="btn-button del-button" href="">삭제</a>
+            <a class="btn-button" href="/public/admin/notice/list.html">목록</a>
+            <!-- <a class="btn-button update">수정</a> -->
+            <a class="btn-button update" href="">수정</a>
           </section>
 
           <section class="next-list">
@@ -119,7 +125,7 @@
                 <col style="width: 200px" />
               </colgroup>
 
-              <tr>
+              <!-- <tr>
                 <td class="move-icon">
                   <a href=""><i class="xi-angle-up-min"></i></a> 이전글
                 </td>
@@ -132,7 +138,7 @@
                 </td>
                 <td></td>
                 <td></td>
-              </tr>
+              </tr> -->
             </table>
           </section>
         </main>
@@ -145,5 +151,10 @@
       </footer> -->
       <!-- //footer -->
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="../../js/admin/notice/detail.js"></script>
   </body>
 </html>

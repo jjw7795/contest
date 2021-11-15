@@ -21,6 +21,21 @@
     <link rel="stylesheet" href="../css/notice.css" />
     <link rel="stylesheet" href="../main.css" />
     <script src="../main.js"></script>
+
+    <style>
+      .btn-list {
+        text-align: center;
+        padding: 50px;
+      }
+      .btn-list > button {
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        background-color: #fdc000;
+        color: #fff;
+        border: none;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -52,9 +67,9 @@
 
     <div class="notice">
       <div style="width: 1200px">
-        <h1>공지사항</h1>
+        <h1>자세한 내용</h1>
 
-        <div class="input-box">
+        <!-- <div class="input-box">
           <input
             type="text"
             placeholder="검색어를 입력해주세요"
@@ -64,7 +79,7 @@
           <button class="btn" @click="apply">
             <span class="material-icons"> search </span>
           </button>
-        </div>
+        </div> -->
       </div>
 
       <div class="count-box"></div>
@@ -78,47 +93,36 @@
             <col style="width: 100px" />
           </colgroup>
           <thead>
-            <tr>
+            <!-- <tr>
               <th>번호</th>
               <th>제목</th>
               <th>작성일</th>
-            </tr>
+            </tr> -->
           </thead>
 
           <tbody class="tbody">
-            <!-- <tr>
-              <td>1</td>
-              <td>ㅎㅎ</td>
-              <td>2021</td>
-              <td>5</td>
+            <tr>
+              <td>제목</td>
+              <td class="title"></td>
+            </tr>
+
+            <tr class="write">
+              <th>내용</th>
+              <td class="content-text"></td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>파일</td>
+              <td class="fileName"></td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>작성일</td>
+              <td class="date"></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr> -->
           </tbody>
         </table>
       </div>
-      <div class="page-box">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link">1</a>
-          </li>
-        </ul>
+      <div class="btn-list">
+        <button class="to-list">목록</button>
       </div>
     </div>
 
@@ -129,6 +133,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
-    <script src="../js/notice.js"></script>
+    <script src="../js/notice-detail.js"></script>
   </body>
 </html>
