@@ -27,7 +27,7 @@ db.collection("notice")
                 
             
                 <td><a href="/admin/notice/detail.html?id=${doc.id}"> ${
-        doc.data().content
+        doc.data().title
       }</a></td>
                 <td>${doc.data().date}</td>
 
