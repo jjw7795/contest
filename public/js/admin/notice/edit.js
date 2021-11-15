@@ -65,7 +65,7 @@ $(".update").click(function (e) {
           .update(바꿀거)
           .then((result) => {
             window.location.href =
-              "/public/admin/notice/detail.html?id=" + 쿼리스트링.get("id");
+              "/admin/notice/detail.html?id=" + 쿼리스트링.get("id");
           })
           .catch((err) => {
             console.log(err);

@@ -26,9 +26,9 @@ db.collection("notice")
                 <td>${n++}</td>
                 
             
-                <td><a href="/public/subPage/notice-detail.html?id=${
-                  doc.id
-                }"> ${doc.data().content}</a></td>
+                <td><a href="/subPage/notice-detail.html?id=${doc.id}"> ${
+        doc.data().content
+      }</a></td>
                 <td>${doc.data().date}</td>
 
               

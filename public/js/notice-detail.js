@@ -30,5 +30,5 @@ db.collection("notice")
   });
 
 $(".to-list").click(function () {
-  window.location.href = "/public/subPage/notice.html";
+  window.location.href = "/subPage/notice.html";
 });

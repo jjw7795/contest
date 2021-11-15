@@ -85,7 +85,7 @@ $(".regi").click(function (e) {
         db.collection("notice")
           .add(저장할거)
           .then((result) => {
-            window.location.href = "/public/admin/notice/list.html";
+            window.location.href = "/admin/notice/list.html";
           })
           .catch((err) => {
             console.log(err);

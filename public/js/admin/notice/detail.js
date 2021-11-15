@@ -32,6 +32,5 @@ db.collection("notice")
 $(".update").click(function (e) {
   e.preventDefault();
   console.log("dkfjdkf");
-  window.location.href =
-    "/public/admin/notice/edit.html?id=" + 쿼리스트링.get("id");
+  window.location.href = "/admin/notice/edit.html?id=" + 쿼리스트링.get("id");
 });
